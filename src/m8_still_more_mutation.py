@@ -73,11 +73,11 @@ def RETURN_delete_negatives(numbers):
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
 
-    new = []
+    nuevo = []
     for k in range(len(numbers)):
         if numbers[k] >= 0:
-            new += [numbers[k]]
-    return new
+            nuevo += [numbers[k]]
+    return nuevo
 
 
 def run_test_MUTATE_delete_negatives():

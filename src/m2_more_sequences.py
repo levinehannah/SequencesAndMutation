@@ -106,11 +106,11 @@ def shortest_string(strings):
     # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
-    minstr = strings[0]
+    ministr = strings[0]
     for k in range(1, len(strings)):
-        if len(minstr) > len(strings[k]):
-            minstr = '' + strings[k]
-    return minstr
+        if len(ministr) > len(strings[k]):
+            ministr = '' + strings[k]
+    return ministr
 
 def run_test_index_of_largest_number():
     """ Tests the   index_of_largest_number   function. """
@@ -248,11 +248,11 @@ def number_of_stutters(s):
     # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     # ------------------------------------------------------------------
-    stutters = 0
+    ini = 0
     for k in range(len(s)-1):
         if s[k] == s[k+1]:
-            stutters += 1
-    return stutters
+            ini += 1
+    return ini
 
 def run_test_is_palindrome():
     """ Tests the   is_palindrome   function. """
@@ -335,7 +335,7 @@ def is_palindrome(s):
     for k in range(len(s)-1,-1,-1):
         backwards += s[k]
     if s == backwards:
-        return  True
+        return True
     else:
         return False
 

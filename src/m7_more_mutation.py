@@ -175,9 +175,9 @@ def RETURN_circle(circle, color):
     #          (using the above code for testing).
     #
     # HINT: Use the   clone   method to make the copy.
-    newcirc = circle.clone()
-    newcirc.fill_color = color
-    return newcirc
+    newcircle = circle.clone()
+    newcircle.fill_color = color
+    return newcircle
 
 def run_test_MUTATE_circle():
     """ Tests the   MUTATE_circle   function. """
